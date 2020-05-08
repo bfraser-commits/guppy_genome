@@ -1,0 +1,90 @@
+{
+  "falcon_sense_greedy": false,
+  "sge_option_pda": "-cwd -V -pe parallel 8   -l h_rt=336:0:0 -l h_vmem=10G",
+  "job.step.la": {
+    "JOB_OPTS": "-cwd -V -pe parallel 2   -l h_rt=336:0:0 -l h_vmem=20G"
+  },
+  "seed_coverage": "30",
+  "overlap_filtering_setting": "--max-diff 160 --max-cov 160 --min-cov 5 --n-core 24 --bestn 10",
+  "length_cutoff_pr": "1",
+  "input_fofn": "asm.fofn",
+  "pa_HPCdaligner_option": "-v -D24 -t16 -e.70 -l1000 -s100",
+  "sge_option_fc": "-cwd -V -pe parallel 20  -l h_rt=336:0:0 -l h_vmem=10G",
+  "ver": "100",
+  "job.step.da": {
+    "JOB_OPTS": "-cwd -V -pe parallel 8   -l h_rt=336:0:0 -l h_vmem=10G"
+  },
+  "input_type": "raw",
+  "pa_DBsplit_option": "-x500 -s400",
+  "sge_option_cns": "-cwd -V -pe parallel 8   -l h_rt=336:0:0 -l h_vmem=10G",
+  "fc_ovlp_to_graph_option": " --min_len 1",
+  "pa_hpcdaligner_option": "-v -B128 -t16 -e.80 -M24 -l4800 -s100 -k18 -w8 -h480",
+  "genome_size": "900000000",
+  "avoid_text_file_busy": true,
+  "pa_dazcon_option": "-j 4 -x -l 500",
+  "job.step.cns": {
+    "JOB_OPTS": "-cwd -V -pe parallel 8   -l h_rt=336:0:0 -l h_vmem=10G"
+  },
+  "sge_option_pla": "-cwd -V -pe parallel 2   -l h_rt=336:0:0 -l h_vmem=20G",
+  "la4falcon_preload": "",
+  "skip_checks": false,
+  "bestn": 12,
+  "target": "assembly",
+  "falcon_sense_skip_contained": false,
+  "job.step.pda": {
+    "JOB_OPTS": "-cwd -V -pe parallel 8   -l h_rt=336:0:0 -l h_vmem=10G"
+  },
+  "length_cutoff": "1",
+  "pa_DBdust_option": "",
+  "sge_option_la": "-cwd -V -pe parallel 2   -l h_rt=336:0:0 -l h_vmem=20G",
+  "ovlp_HPCdaligner_option": "-v -B128 -M24 -h1024 -e.90 -l2500 -s100 -k24",
+  "General": {
+    "falcon_sense_greedy": false,
+    "seed_coverage": "30",
+    "overlap_filtering_setting": "--max-diff 160 --max-cov 160 --min-cov 5 --n-core 24 --bestn 10",
+    "length_cutoff_pr": "1",
+    "input_fofn": "asm.fofn",
+    "pa_HPCdaligner_option": "-v -D24 -t16 -e.70 -l1000 -s100",
+    "bestn": 12,
+    "input_type": "raw",
+    "pa_DBsplit_option": "-x500 -s400",
+    "sge_option_cns": "-cwd -V -pe parallel 8   -l h_rt=336:0:0 -l h_vmem=10G",
+    "fc_ovlp_to_graph_option": " --min_len 1",
+    "pa_hpcdaligner_option": "-v -B128 -t16 -e.80 -M24 -l4800 -s100 -k18 -w8 -h480",
+    "genome_size": "900000000",
+    "avoid_text_file_busy": true,
+    "pa_dazcon_option": "-j 4 -x -l 500",
+    "sge_option_pla": "-cwd -V -pe parallel 2   -l h_rt=336:0:0 -l h_vmem=20G",
+    "la4falcon_preload": "",
+    "skip_checks": false,
+    "target": "assembly",
+    "falcon_sense_skip_contained": false,
+    "length_cutoff": "1",
+    "pa_DBdust_option": "",
+    "sge_option_la": "-cwd -V -pe parallel 2   -l h_rt=336:0:0 -l h_vmem=20G",
+    "ovlp_HPCdaligner_option": "-v -B128 -M24 -h1024 -e.90 -l2500 -s100 -k24",
+    "sge_option_fc": "-cwd -V -pe parallel 20  -l h_rt=336:0:0 -l h_vmem=10G",
+    "dazcon": false,
+    "falcon_sense_option": "--output-multi --min-idt 0.70 --min-cov 4 --max-n-read 200 --n-core 8",
+    "sge_option_da": "-cwd -V -pe parallel 8   -l h_rt=336:0:0 -l h_vmem=10G",
+    "ovlp_DBsplit_option": "-x500 -s400",
+    "sge_option_pda": "-cwd -V -pe parallel 8   -l h_rt=336:0:0 -l h_vmem=10G"
+  },
+  "job.step.pla": {
+    "JOB_OPTS": "-cwd -V -pe parallel 2   -l h_rt=336:0:0 -l h_vmem=20G"
+  },
+  "dazcon": false,
+  "falcon_sense_option": "--output-multi --min-idt 0.70 --min-cov 4 --max-n-read 200 --n-core 8",
+  "sge_option_da": "-cwd -V -pe parallel 8   -l h_rt=336:0:0 -l h_vmem=10G",
+  "job.step.asm": {
+    "JOB_OPTS": "-cwd -V -pe parallel 20  -l h_rt=336:0:0 -l h_vmem=10G"
+  },
+  "ovlp_DBsplit_option": "-x500 -s400",
+  "job.defaults": {
+    "job_queue": "long.q",
+    "pwatcher_type": "fs_based",
+    "njobs": "512",
+    "job_type": "sge",
+    "use_tmpdir": false
+  }
+}
