@@ -1,1 +1,2 @@
 PRET-male_curated_chr12.fasta filter=lfs diff=lfs merge=lfs -text
+PRET-male_full_assembly.fasta filter=lfs diff=lfs merge=lfs -text
